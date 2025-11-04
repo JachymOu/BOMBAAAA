@@ -1,7 +1,6 @@
 <?php 
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
 $products = [
     ['id'=>101,'title'=>'Fiktivní bomba (replika)','desc'=>'jen rekvizita, nefunkční','seller'=>55,'visible'=>true],
     ['id'=>102,'title'=>'Kobereček','desc'=>'hezký kobereček','seller'=>66,'visible'=>true],
@@ -36,10 +35,7 @@ unset($p);
 print_r($products);
 print_r($tickets);
 print_r($emails);
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+
 
 
 
