@@ -3,6 +3,9 @@
 $products = [
     ['id'=>101,'title'=>'Fiktivní bomba (replika)','desc'=>'jen rekvizita, nefunkční','seller'=>55,'visible'=>true],
     ['id'=>102,'title'=>'Kobereček','desc'=>'hezký kobereček','seller'=>66,'visible'=>true],
+    ['id'=>103, 'title'=>'Výbušnina XYZ','desc'=>'silná výbušnina pro průmyslové použití','seller'=>77,'visible'=>true],
+    
+    
 ];
 
 $keywords = ['bomb','bomba','výbušnina','explosive'];
@@ -33,6 +36,8 @@ print_r($tickets);
 print_r($emails);
 
 
+
+ 
 ?>
 
 <html lang="en">
