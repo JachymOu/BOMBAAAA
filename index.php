@@ -3,8 +3,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="hlstr.css">
 </head>
 <body>
-    <p>Hello, World!</p>
+    <div class="form-container">
+        <form method="dialog">
+            <h1>Registration</h1>
+            <label for="username">Username:</label>
+            <input id="username" name="username" type="text">
+            <label for="password">Password:</label>
+            <input id="password" name="password" type="password">
+            <button id="submit" onclick="submitFunction()">Registrate</button>
+        </form>
+    </div>
+    <div class="password-requirements">
+        <p id="lowercase">Contains a lowercase letter: ❌</p>
+        <p id="uppercase">Contains a uppercase letter: ❌</p>
+        <p id="number">Contains a number: ❌</p>
+        <p id="special">Contains a special character: ❌</p>
+        <p id="length">Contains atleast 8 characters: ❌</p>
+        <div class="wrapper">
+            <div class="hints">Hints ?</div>
+            <div class="show">Special characters: !@#$%^&*(),.?":{}|< ></div>
+        </div>
+    </div>
 </body>
 </html>
