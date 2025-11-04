@@ -1,0 +1,173 @@
+/* Reset a základ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* Kontejner formuláře */
+.form-container {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    padding: 40px 50px;
+    width: 350px;
+    text-align: center;
+    animation: fadeIn 1s ease forwards;
+}
+
+/* Nadpis */
+form h1 {
+    margin-bottom: 25px;
+    font-size: 2rem;
+    background: linear-gradient(90deg, #00d4ff, #00ffba);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Labely */
+label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+}
+
+/* Inputy */
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 10px #00d4ff;
+}
+
+/* Tlačítko */
+button {
+    margin-top: 25px;
+    padding: 12px 25px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #00d4ff, #00ffba);
+    color: #0f2027;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 255, 255, 0.3);
+}
+
+button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 25px rgba(0, 255, 255, 0.5);
+}
+
+/* Požadavky na heslo */
+.password-requirements {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    width: 280px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1.2s ease forwards;
+}
+
+/* Texty v requirements */
+.password-requirements p {
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+.password-requirements p.good {
+    color: #00ffba;
+}
+
+.password-requirements p.bad {
+    color: #ff4c4c;
+}
+
+/* Hints box */
+.wrapper {
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.hints {
+    font-weight: 600;
+    color: #00d4ff;
+    margin-bottom: 5px;
+}
+
+.show {
+    font-size: 0.85rem;
+    color: #ccc;
+}
+
+/* Animace */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    } to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    } to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsivita */
+@media (max-width: 700px) {
+    body {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .form-container {
+        width: 90%;
+        margin-bottom: 25px;
+    }
+
+    .password-requirements {
+        position: static;
+        width: 100%;
+    }
+}
