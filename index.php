@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="hlstr.css">
 </head>
 <body>
-    
+    <ul>
+        <li><a href="registration.html">Registrace</a></li>
+        <li><a href="login.html">Přihlášení</a></li>
+        <li><a href="index.php"></a></li>
+    </ul>
 </body>
 </html>
